@@ -6,6 +6,8 @@
 // @author      brdlnx
 // @match       https://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
 // @match       http://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
+// @updateURL   https://raw.githubusercontent.com/brdlinx/Learning-Labor-Tracking/main/Learning-Labor-Tracking.user.js
+// @downloadURL https://raw.githubusercontent.com/brdlinx/Learning-Labor-Tracking/main/Learning-Labor-Tracking.user.js
 // ==/UserScript==
 
 var css = document.createElement("style");
