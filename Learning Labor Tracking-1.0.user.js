@@ -6,17 +6,8 @@
 // @author      brdlnx
 // @match       https://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
 // @match       http://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
-// @updateURL   https://github.com/brdlnx-ld/Learning-Labor-Tracking/raw/refs/heads/main/Learning%20Labor%20Tracking-1.0.user.js
-// @downloadURL https://github.com/brdlnx-ld/Learning-Labor-Tracking/raw/refs/heads/main/Learning%20Labor%20Tracking-1.0.user.js
-Userscript re-installation
- 
-	All script settings will be reset!
-Installed Version
-	v1.0
-Include(s)
-	https://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
-
-// @downloadURL https://raw.githubusercontent.com/brdlinx/Learning-Labor-Tracking/main/Learning-Labor-Tracking.user.js
+// @updateURL   https://raw.githubusercontent.com/brdlnx-ld/Learning-Labor-Tracking/main/Learning-Labor-Tracking.user.js
+// @downloadURL https://raw.githubusercontent.com/brdlnx-ld/Learning-Labor-Tracking/main/Learning-Labor-Tracking.user.js
 // ==/UserScript==
 
 var css = document.createElement("style");
@@ -202,56 +193,4 @@ var codes = [
             {name: 'D1/D2 Process Training', code: 'AMBPALTBLD'},
         ]
     },
-    {
-        title: 'STOP TASK',
-        color: '#ff4444',
-        roles: [
-            {name: 'Master Stop', code: 'MSTOP'},
-            {name: 'Indriect Stop', code: 'ISTOP'},
-        ]
-    },
-];
-
-
-let toolbox = document.createElement('div');
-toolbox.id = "toolbox";
-
-let toolboxHTML = '';
-
-for (let i = 0; i < codes.length; i++) {
-    const shift = codes[i];
-
-    toolboxHTML += `<div class="row" style="background-color:${shift.color};">
-    <h1>${shift.title}</h1>
-    <div class="roles">`;
-
-    for (let j = 0; j < shift.roles.length; j++) {
-        const role = shift.roles[j];
-        toolboxHTML += `<button value="${role.code}" title="${role.code}">${role.name}</button>`;
-    }
-
-    toolboxHTML += `</div></div>`;
-}
-
-toolbox.innerHTML = toolboxHTML;
-
-document.querySelector('#body').appendChild(toolbox);
-
-
-// menu open/close
-Array.from(document.querySelectorAll('#body > #toolbox > .row > h1')).forEach(header => {
-    header.addEventListener('click', () => {
-        const row = header.parentElement;
-        row.classList.toggle('open');
-    });
-});
-
-
-// button press
-Array.from(document.querySelectorAll('#body > #toolbox > .row > .roles > button')).forEach(el => {
-    el.addEventListener('click', () => {
-        document.getElementById('calmCode').value = el.value;
-        document.forms[0].submit();
-    });
-});
-
+   
