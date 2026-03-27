@@ -6,7 +6,16 @@
 // @author      brdlnx
 // @match       https://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
 // @match       http://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
-// @updateURL   https://raw.githubusercontent.com/brdlinx/Learning-Labor-Tracking/main/Learning-Labor-Tracking.user.js
+// @updateURL   https://github.com/brdlnx-ld/Learning-Labor-Tracking/raw/refs/heads/main/Learning%20Labor%20Tracking-1.0.user.js
+// @downloadURL https://github.com/brdlnx-ld/Learning-Labor-Tracking/raw/refs/heads/main/Learning%20Labor%20Tracking-1.0.user.js
+Userscript re-installation
+ 
+	All script settings will be reset!
+Installed Version
+	v1.0
+Include(s)
+	https://fcmenu-dub-regionalized.corp.amazon.com/*/laborTrackingKiosk
+
 // @downloadURL https://raw.githubusercontent.com/brdlinx/Learning-Labor-Tracking/main/Learning-Labor-Tracking.user.js
 // ==/UserScript==
 
